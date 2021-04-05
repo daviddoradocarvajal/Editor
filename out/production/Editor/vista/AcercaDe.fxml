@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="188.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Controlador">
+   <children>
+      <Label layoutX="0" prefHeight="200.0" prefWidth="376.0" text="Este es un editor de texto desarrollado por David Dorado Carvajal" />
+      <Label layoutX="149.0" layoutY="119.0" text="Version 1.0" />
+   </children>
+</Pane>

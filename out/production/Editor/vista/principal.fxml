@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.06030150753768844" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Controlador">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" SplitPane.resizableWithParent="1">
+            <children>
+                <MenuBar layoutY="-2.0">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="Archivo">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#nuevoArchivo" text="Nuevo" />
+                                <MenuItem mnemonicParsing="false" onAction="#abrirArchivo" text="Abrir" />
+                                <Menu mnemonicParsing="false" text="Recientes">
+                                    <items>
+                                        <MenuItem id="recunouno" fx:id="reciente11" mnemonicParsing="false" />
+                                        <MenuItem id="recdosdos" fx:id="reciente22" mnemonicParsing="false" />
+                                        <MenuItem id="rectrestres" fx:id="reciente33" mnemonicParsing="false" />
+                                    </items>
+                                </Menu>
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem fx:id="guardar" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+                                <MenuItem fx:id="guardarComo" mnemonicParsing="false" onAction="#guardarComo" text="Guardar Como..." />
+                                <MenuItem fx:id="cerrar" mnemonicParsing="false" onAction="#cerrar" text="Cerrar" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Ayuda">
+                            <items>
+                                <MenuItem fx:id="acercaDe" mnemonicParsing="false" onAction="#acercaDe" text="Acerca de" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="222.0" prefWidth="598.0">
+            <children>
+                <TextArea fx:id="texto" layoutX="-3.0" layoutY="21.0" onKeyPressed="#contadorPalabras" prefHeight="350.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0" />
+                <Pane layoutX="385.0" layoutY="347.0" prefHeight="21.0" prefWidth="213.0" AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="385.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="00.0">
+                    <children>
+                        <Label fx:id="estado" layoutX="6.0" layoutY="-2.0" prefHeight="25.0" prefWidth="193.0" text="Palabras:  0 Columna: 0" textAlignment="CENTER" />
+                    </children>
+                </Pane>
+                <Button layoutY="-4.0" mnemonicParsing="false" onAction="#nuevoArchivo" text="Nuevo" />
+                <Button layoutX="52.0" layoutY="-4.0" mnemonicParsing="false" onAction="#abrirArchivo" text="Abrir" />
+                <Button layoutX="95.0" layoutY="-4.0" mnemonicParsing="false" onAction="#guardar" text="Guardar" />
+                <Button layoutX="154.0" layoutY="-4.0" mnemonicParsing="false" onAction="#guardarComo" text="Guardar como" />
+                <Button layoutX="246.0" layoutY="-4.0" mnemonicParsing="false" onAction="#cerrar" text="Cerrar" />
+                <SplitMenuButton layoutX="295.0" layoutY="-4.0" mnemonicParsing="false" text="Recientes">
+                    <items>
+                        <MenuItem id="recuno" fx:id="reciente1" mnemonicParsing="false" />
+                        <MenuItem id="recdos" fx:id="reciente2" mnemonicParsing="false" />
+                        <MenuItem id="rectres" fx:id="reciente3" mnemonicParsing="false" />
+                    </items>
+                </SplitMenuButton>
+            </children></AnchorPane>
+    </items>
+</SplitPane>
